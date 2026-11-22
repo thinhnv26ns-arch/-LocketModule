@@ -1,0 +1,9 @@
+
+#!name=Locket Test
+#!desc=My first Shadowrocket module
+
+[Script]
+http-response ^https://httpbin\.org/json script-path=locket-test.js, requires-body=1
+
+[MITM]
+hostname = httpbin.org
